@@ -13,6 +13,7 @@ namespace COMP123_s2019_finalTestA.Objects
     class Hero
     {
         //Private Instance Variable
+
         private string m_fighting;
         private string m_strength;
         private string m_agility;
@@ -21,6 +22,7 @@ namespace COMP123_s2019_finalTestA.Objects
         private string m_intuition;
         private string m_psyche;
         private string m_popularity;
+
         //Identity
         public string HeroName { get; set; }
         public string FirstName { get; set; }
@@ -136,7 +138,7 @@ namespace COMP123_s2019_finalTestA.Objects
         //Power List
         List<Power> Powers;
     //Constructor
-        Hero()
+        public Hero()
         {
             Powers = new List<Power>();
         }
