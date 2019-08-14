@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*
- * Student Name: 
- * Student Id:
+ * Student Name: Ishneet Kaur
+ * Student Id: 301045264
  * Description: This is the Hero Data Container Class
  */
 namespace COMP123_s2019_finalTestA.Objects
 {
-    class Hero
+   public class Hero
     {
         //Private Instance Variable
 
@@ -136,11 +136,12 @@ namespace COMP123_s2019_finalTestA.Objects
         public int Karma { get; set; }
 
         //Power List
-        List<Power> Powers;
+       public List<Power> Powers;
     //Constructor
         public Hero()
         {
             Powers = new List<Power>();
         }
+       
     }
 }

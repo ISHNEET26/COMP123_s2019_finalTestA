@@ -35,7 +35,7 @@
             this.FirstNameDataLabel = new System.Windows.Forms.Label();
             this.GenerateNameButton = new System.Windows.Forms.Button();
             this.FirstNameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LastNameLabel = new System.Windows.Forms.Label();
             this.HeroNameTextBox = new System.Windows.Forms.TextBox();
             this.HeroNameLabel = new System.Windows.Forms.Label();
             this.Abilities = new System.Windows.Forms.TabPage();
@@ -60,13 +60,31 @@
             this.ReasonLabel = new System.Windows.Forms.Label();
             this.MentalAbilitiesLabel = new System.Windows.Forms.Label();
             this.Powers = new System.Windows.Forms.TabPage();
+            this.GeneratePowerButton = new System.Windows.Forms.Button();
+            this.PowerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.Power4DataLabel = new System.Windows.Forms.Label();
+            this.Power2DataLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.PowerLabel1 = new System.Windows.Forms.Label();
+            this.PowerLabel2 = new System.Windows.Forms.Label();
+            this.PowerLabel3 = new System.Windows.Forms.Label();
+            this.PowerLabel4 = new System.Windows.Forms.Label();
+            this.Power1DataLabel = new System.Windows.Forms.Label();
+            this.Power3DataLabel = new System.Windows.Forms.Label();
             this.CharacterSheet = new System.Windows.Forms.TabPage();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.CharacterTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.GeneratedNameLabel = new System.Windows.Forms.Label();
+            this.AbilitiesLabel = new System.Windows.Forms.Label();
+            this.PowersLabel = new System.Windows.Forms.Label();
+            this.nameDataLabel = new System.Windows.Forms.Label();
+            this.generatedNameDataLabel = new System.Windows.Forms.Label();
+            this.CharacterSheetToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.CharacterSheetMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -76,13 +94,17 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.MainTabControl.SuspendLayout();
             this.Identity.SuspendLayout();
             this.Abilities.SuspendLayout();
             this.AbilitiesTableLayoutPanel.SuspendLayout();
+            this.Powers.SuspendLayout();
+            this.PowerTableLayoutPanel.SuspendLayout();
             this.CharacterSheet.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.CharacterTableLayoutPanel.SuspendLayout();
+            this.CharacterSheetToolStrip.SuspendLayout();
+            this.CharacterSheetMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTabControl
@@ -104,7 +126,7 @@
             this.Identity.Controls.Add(this.FirstNameDataLabel);
             this.Identity.Controls.Add(this.GenerateNameButton);
             this.Identity.Controls.Add(this.FirstNameLabel);
-            this.Identity.Controls.Add(this.label1);
+            this.Identity.Controls.Add(this.LastNameLabel);
             this.Identity.Controls.Add(this.HeroNameTextBox);
             this.Identity.Controls.Add(this.HeroNameLabel);
             this.Identity.Location = new System.Drawing.Point(4, 33);
@@ -119,7 +141,7 @@
             // 
             this.LastNameDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LastNameDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LastNameDataLabel.Location = new System.Drawing.Point(309, 157);
+            this.LastNameDataLabel.Location = new System.Drawing.Point(329, 174);
             this.LastNameDataLabel.Name = "LastNameDataLabel";
             this.LastNameDataLabel.Size = new System.Drawing.Size(234, 36);
             this.LastNameDataLabel.TabIndex = 7;
@@ -129,7 +151,7 @@
             // 
             this.FirstNameDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.FirstNameDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FirstNameDataLabel.Location = new System.Drawing.Point(309, 82);
+            this.FirstNameDataLabel.Location = new System.Drawing.Point(329, 106);
             this.FirstNameDataLabel.Name = "FirstNameDataLabel";
             this.FirstNameDataLabel.Size = new System.Drawing.Size(234, 36);
             this.FirstNameDataLabel.TabIndex = 7;
@@ -137,7 +159,7 @@
             // 
             // GenerateNameButton
             // 
-            this.GenerateNameButton.Location = new System.Drawing.Point(297, 258);
+            this.GenerateNameButton.Location = new System.Drawing.Point(498, 302);
             this.GenerateNameButton.Name = "GenerateNameButton";
             this.GenerateNameButton.Size = new System.Drawing.Size(178, 31);
             this.GenerateNameButton.TabIndex = 6;
@@ -148,24 +170,24 @@
             // FirstNameLabel
             // 
             this.FirstNameLabel.AutoSize = true;
-            this.FirstNameLabel.Location = new System.Drawing.Point(111, 94);
+            this.FirstNameLabel.Location = new System.Drawing.Point(200, 112);
             this.FirstNameLabel.Name = "FirstNameLabel";
             this.FirstNameLabel.Size = new System.Drawing.Size(101, 24);
             this.FirstNameLabel.TabIndex = 4;
             this.FirstNameLabel.Text = "First Name";
             // 
-            // label1
+            // LastNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(113, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Last Name";
+            this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Location = new System.Drawing.Point(202, 180);
+            this.LastNameLabel.Name = "LastNameLabel";
+            this.LastNameLabel.Size = new System.Drawing.Size(99, 24);
+            this.LastNameLabel.TabIndex = 2;
+            this.LastNameLabel.Text = "Last Name";
             // 
             // HeroNameTextBox
             // 
-            this.HeroNameTextBox.Location = new System.Drawing.Point(324, 10);
+            this.HeroNameTextBox.Location = new System.Drawing.Point(329, 24);
             this.HeroNameTextBox.Name = "HeroNameTextBox";
             this.HeroNameTextBox.Size = new System.Drawing.Size(230, 29);
             this.HeroNameTextBox.TabIndex = 1;
@@ -173,7 +195,7 @@
             // HeroNameLabel
             // 
             this.HeroNameLabel.AutoSize = true;
-            this.HeroNameLabel.Location = new System.Drawing.Point(111, 15);
+            this.HeroNameLabel.Location = new System.Drawing.Point(111, 24);
             this.HeroNameLabel.Name = "HeroNameLabel";
             this.HeroNameLabel.Size = new System.Drawing.Size(158, 24);
             this.HeroNameLabel.TabIndex = 0;
@@ -382,6 +404,7 @@
             this.GenerateAbilitiesButton.TabIndex = 34;
             this.GenerateAbilitiesButton.Text = "Generate Ability";
             this.GenerateAbilitiesButton.UseVisualStyleBackColor = true;
+            this.GenerateAbilitiesButton.Click += new System.EventHandler(this.GenerateAbilitiesButton_Click);
             // 
             // PopularityDataLabel
             // 
@@ -476,6 +499,8 @@
             // 
             // Powers
             // 
+            this.Powers.Controls.Add(this.GeneratePowerButton);
+            this.Powers.Controls.Add(this.PowerTableLayoutPanel);
             this.Powers.Location = new System.Drawing.Point(4, 33);
             this.Powers.Name = "Powers";
             this.Powers.Padding = new System.Windows.Forms.Padding(3);
@@ -484,10 +509,166 @@
             this.Powers.Text = "Powers";
             this.Powers.UseVisualStyleBackColor = true;
             // 
+            // GeneratePowerButton
+            // 
+            this.GeneratePowerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GeneratePowerButton.Location = new System.Drawing.Point(424, 341);
+            this.GeneratePowerButton.Name = "GeneratePowerButton";
+            this.GeneratePowerButton.Size = new System.Drawing.Size(300, 44);
+            this.GeneratePowerButton.TabIndex = 4;
+            this.GeneratePowerButton.Text = "Generate Power";
+            this.GeneratePowerButton.UseVisualStyleBackColor = true;
+            this.GeneratePowerButton.Click += new System.EventHandler(this.GeneratePowerButton_Click);
+            // 
+            // PowerTableLayoutPanel
+            // 
+            this.PowerTableLayoutPanel.ColumnCount = 4;
+            this.PowerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PowerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PowerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PowerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PowerTableLayoutPanel.Controls.Add(this.Power4DataLabel, 2, 4);
+            this.PowerTableLayoutPanel.Controls.Add(this.Power2DataLabel, 2, 2);
+            this.PowerTableLayoutPanel.Controls.Add(this.label1, 0, 0);
+            this.PowerTableLayoutPanel.Controls.Add(this.PowerLabel1, 0, 1);
+            this.PowerTableLayoutPanel.Controls.Add(this.PowerLabel2, 2, 1);
+            this.PowerTableLayoutPanel.Controls.Add(this.PowerLabel3, 0, 3);
+            this.PowerTableLayoutPanel.Controls.Add(this.PowerLabel4, 2, 3);
+            this.PowerTableLayoutPanel.Controls.Add(this.Power1DataLabel, 0, 2);
+            this.PowerTableLayoutPanel.Controls.Add(this.Power3DataLabel, 0, 4);
+            this.PowerTableLayoutPanel.Location = new System.Drawing.Point(6, 6);
+            this.PowerTableLayoutPanel.Name = "PowerTableLayoutPanel";
+            this.PowerTableLayoutPanel.RowCount = 5;
+            this.PowerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.PowerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.PowerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.PowerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.PowerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.PowerTableLayoutPanel.Size = new System.Drawing.Size(721, 278);
+            this.PowerTableLayoutPanel.TabIndex = 3;
+            // 
+            // Power4DataLabel
+            // 
+            this.Power4DataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.Power4DataLabel, 2);
+            this.Power4DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Power4DataLabel.Location = new System.Drawing.Point(363, 220);
+            this.Power4DataLabel.Name = "Power4DataLabel";
+            this.Power4DataLabel.Size = new System.Drawing.Size(354, 55);
+            this.Power4DataLabel.TabIndex = 8;
+            // 
+            // Power2DataLabel
+            // 
+            this.Power2DataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.Power2DataLabel, 2);
+            this.Power2DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Power2DataLabel.ForeColor = System.Drawing.Color.Black;
+            this.Power2DataLabel.Location = new System.Drawing.Point(363, 110);
+            this.Power2DataLabel.Name = "Power2DataLabel";
+            this.Power2DataLabel.Size = new System.Drawing.Size(354, 55);
+            this.Power2DataLabel.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerTableLayoutPanel.SetColumnSpan(this.label1, 4);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(715, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Powers";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel1
+            // 
+            this.PowerLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerLabel1.AutoSize = true;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.PowerLabel1, 2);
+            this.PowerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowerLabel1.Location = new System.Drawing.Point(3, 55);
+            this.PowerLabel1.Name = "PowerLabel1";
+            this.PowerLabel1.Size = new System.Drawing.Size(354, 55);
+            this.PowerLabel1.TabIndex = 1;
+            this.PowerLabel1.Text = "Power 1";
+            this.PowerLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel2
+            // 
+            this.PowerLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerLabel2.AutoSize = true;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.PowerLabel2, 2);
+            this.PowerLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowerLabel2.Location = new System.Drawing.Point(363, 55);
+            this.PowerLabel2.Name = "PowerLabel2";
+            this.PowerLabel2.Size = new System.Drawing.Size(355, 55);
+            this.PowerLabel2.TabIndex = 2;
+            this.PowerLabel2.Text = "Power 2";
+            this.PowerLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel3
+            // 
+            this.PowerLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerLabel3.AutoSize = true;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.PowerLabel3, 2);
+            this.PowerLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowerLabel3.Location = new System.Drawing.Point(3, 165);
+            this.PowerLabel3.Name = "PowerLabel3";
+            this.PowerLabel3.Size = new System.Drawing.Size(354, 55);
+            this.PowerLabel3.TabIndex = 3;
+            this.PowerLabel3.Text = "Power 3";
+            this.PowerLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel4
+            // 
+            this.PowerLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerLabel4.AutoSize = true;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.PowerLabel4, 2);
+            this.PowerLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowerLabel4.Location = new System.Drawing.Point(363, 165);
+            this.PowerLabel4.Name = "PowerLabel4";
+            this.PowerLabel4.Size = new System.Drawing.Size(355, 55);
+            this.PowerLabel4.TabIndex = 4;
+            this.PowerLabel4.Text = "Power 4";
+            this.PowerLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Power1DataLabel
+            // 
+            this.Power1DataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.Power1DataLabel, 2);
+            this.Power1DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Power1DataLabel.ForeColor = System.Drawing.Color.Black;
+            this.Power1DataLabel.Location = new System.Drawing.Point(3, 110);
+            this.Power1DataLabel.Name = "Power1DataLabel";
+            this.Power1DataLabel.Size = new System.Drawing.Size(354, 55);
+            this.Power1DataLabel.TabIndex = 5;
+            // 
+            // Power3DataLabel
+            // 
+            this.Power3DataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.PowerTableLayoutPanel.SetColumnSpan(this.Power3DataLabel, 2);
+            this.Power3DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Power3DataLabel.ForeColor = System.Drawing.Color.Black;
+            this.Power3DataLabel.Location = new System.Drawing.Point(3, 220);
+            this.Power3DataLabel.Name = "Power3DataLabel";
+            this.Power3DataLabel.Size = new System.Drawing.Size(354, 55);
+            this.Power3DataLabel.TabIndex = 7;
+            // 
             // CharacterSheet
             // 
-            this.CharacterSheet.Controls.Add(this.toolStrip1);
-            this.CharacterSheet.Controls.Add(this.menuStrip1);
+            this.CharacterSheet.Controls.Add(this.CharacterTableLayoutPanel);
+            this.CharacterSheet.Controls.Add(this.CharacterSheetToolStrip);
+            this.CharacterSheet.Controls.Add(this.CharacterSheetMenuStrip);
             this.CharacterSheet.Location = new System.Drawing.Point(4, 33);
             this.CharacterSheet.Name = "CharacterSheet";
             this.CharacterSheet.Padding = new System.Windows.Forms.Padding(3);
@@ -496,18 +677,122 @@
             this.CharacterSheet.Text = "Character Sheet";
             this.CharacterSheet.UseVisualStyleBackColor = true;
             // 
-            // toolStrip1
+            // CharacterTableLayoutPanel
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CharacterTableLayoutPanel.ColumnCount = 5;
+            this.CharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.75F));
+            this.CharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.75F));
+            this.CharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.75F));
+            this.CharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.75F));
+            this.CharacterTableLayoutPanel.Controls.Add(this.nameLabel, 0, 0);
+            this.CharacterTableLayoutPanel.Controls.Add(this.GeneratedNameLabel, 0, 1);
+            this.CharacterTableLayoutPanel.Controls.Add(this.AbilitiesLabel, 0, 2);
+            this.CharacterTableLayoutPanel.Controls.Add(this.PowersLabel, 0, 3);
+            this.CharacterTableLayoutPanel.Controls.Add(this.nameDataLabel, 1, 0);
+            this.CharacterTableLayoutPanel.Controls.Add(this.generatedNameDataLabel, 1, 1);
+            this.CharacterTableLayoutPanel.Location = new System.Drawing.Point(6, 77);
+            this.CharacterTableLayoutPanel.Name = "CharacterTableLayoutPanel";
+            this.CharacterTableLayoutPanel.RowCount = 4;
+            this.CharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.CharacterTableLayoutPanel.Size = new System.Drawing.Size(740, 316);
+            this.CharacterTableLayoutPanel.TabIndex = 2;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(3, 0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(179, 79);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Hero  Name";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GeneratedNameLabel
+            // 
+            this.GeneratedNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GeneratedNameLabel.AutoSize = true;
+            this.GeneratedNameLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GeneratedNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GeneratedNameLabel.Location = new System.Drawing.Point(3, 79);
+            this.GeneratedNameLabel.Name = "GeneratedNameLabel";
+            this.GeneratedNameLabel.Size = new System.Drawing.Size(179, 79);
+            this.GeneratedNameLabel.TabIndex = 0;
+            this.GeneratedNameLabel.Text = "Generated Name";
+            this.GeneratedNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AbilitiesLabel
+            // 
+            this.AbilitiesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AbilitiesLabel.AutoSize = true;
+            this.AbilitiesLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AbilitiesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbilitiesLabel.Location = new System.Drawing.Point(3, 158);
+            this.AbilitiesLabel.Name = "AbilitiesLabel";
+            this.AbilitiesLabel.Size = new System.Drawing.Size(179, 79);
+            this.AbilitiesLabel.TabIndex = 0;
+            this.AbilitiesLabel.Text = "Abilities";
+            this.AbilitiesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowersLabel
+            // 
+            this.PowersLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowersLabel.AutoSize = true;
+            this.PowersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PowersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowersLabel.Location = new System.Drawing.Point(3, 237);
+            this.PowersLabel.Name = "PowersLabel";
+            this.PowersLabel.Size = new System.Drawing.Size(179, 79);
+            this.PowersLabel.TabIndex = 0;
+            this.PowersLabel.Text = "Powers";
+            this.PowersLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nameDataLabel
+            // 
+            this.nameDataLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterTableLayoutPanel.SetColumnSpan(this.nameDataLabel, 4);
+            this.nameDataLabel.ForeColor = System.Drawing.Color.LightGray;
+            this.nameDataLabel.Location = new System.Drawing.Point(188, 0);
+            this.nameDataLabel.Name = "nameDataLabel";
+            this.nameDataLabel.Size = new System.Drawing.Size(549, 79);
+            this.nameDataLabel.TabIndex = 1;
+            // 
+            // generatedNameDataLabel
+            // 
+            this.generatedNameDataLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterTableLayoutPanel.SetColumnSpan(this.generatedNameDataLabel, 4);
+            this.generatedNameDataLabel.Location = new System.Drawing.Point(188, 79);
+            this.generatedNameDataLabel.Name = "generatedNameDataLabel";
+            this.generatedNameDataLabel.Size = new System.Drawing.Size(549, 79);
+            this.generatedNameDataLabel.TabIndex = 1;
+            // 
+            // CharacterSheetToolStrip
+            // 
+            this.CharacterSheetToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripButton,
             this.saveToolStripButton,
             this.toolStripSeparator,
             this.helpToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 27);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(746, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.CharacterSheetToolStrip.Location = new System.Drawing.Point(3, 27);
+            this.CharacterSheetToolStrip.Name = "CharacterSheetToolStrip";
+            this.CharacterSheetToolStrip.Size = new System.Drawing.Size(746, 25);
+            this.CharacterSheetToolStrip.TabIndex = 0;
+            this.CharacterSheetToolStrip.Text = "toolStrip1";
             // 
             // openToolStripButton
             // 
@@ -517,6 +802,7 @@
             this.openToolStripButton.Name = "openToolStripButton";
             this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.openToolStripButton.Text = "&Open";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
             // 
             // saveToolStripButton
             // 
@@ -526,6 +812,7 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // toolStripSeparator
             // 
@@ -540,17 +827,18 @@
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.helpToolStripButton.Text = "He&lp";
+            this.helpToolStripButton.Click += new System.EventHandler(this.helpToolStripButton_Click);
             // 
-            // menuStrip1
+            // CharacterSheetMenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CharacterSheetMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(3, 3);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(746, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.CharacterSheetMenuStrip.Location = new System.Drawing.Point(3, 3);
+            this.CharacterSheetMenuStrip.Name = "CharacterSheetMenuStrip";
+            this.CharacterSheetMenuStrip.Size = new System.Drawing.Size(746, 24);
+            this.CharacterSheetMenuStrip.TabIndex = 1;
+            this.CharacterSheetMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -605,6 +893,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // NextButton
             // 
@@ -633,20 +922,26 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.MainTabControl);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.CharacterSheetMenuStrip;
             this.Name = "HeroGenerator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeroGenerator_FormClosing);
             this.MainTabControl.ResumeLayout(false);
             this.Identity.ResumeLayout(false);
             this.Identity.PerformLayout();
             this.Abilities.ResumeLayout(false);
             this.AbilitiesTableLayoutPanel.ResumeLayout(false);
             this.AbilitiesTableLayoutPanel.PerformLayout();
+            this.Powers.ResumeLayout(false);
+            this.PowerTableLayoutPanel.ResumeLayout(false);
+            this.PowerTableLayoutPanel.PerformLayout();
             this.CharacterSheet.ResumeLayout(false);
             this.CharacterSheet.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.CharacterTableLayoutPanel.ResumeLayout(false);
+            this.CharacterTableLayoutPanel.PerformLayout();
+            this.CharacterSheetToolStrip.ResumeLayout(false);
+            this.CharacterSheetToolStrip.PerformLayout();
+            this.CharacterSheetMenuStrip.ResumeLayout(false);
+            this.CharacterSheetMenuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -658,7 +953,7 @@
         private System.Windows.Forms.TabPage Abilities;
         private System.Windows.Forms.TabPage Powers;
         private System.Windows.Forms.TabPage CharacterSheet;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip CharacterSheetToolStrip;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
@@ -669,9 +964,9 @@
         private System.Windows.Forms.TextBox HeroNameTextBox;
         private System.Windows.Forms.Button GenerateNameButton;
         private System.Windows.Forms.Label FirstNameLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LastNameLabel;
         private System.Windows.Forms.Label AgilityLabel;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip CharacterSheetMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -700,5 +995,24 @@
         private System.Windows.Forms.Label ReasonLabel;
         private System.Windows.Forms.Label PhysicalAbilitiesLabel;
         private System.Windows.Forms.Label MentalAbilitiesLabel;
+        private System.Windows.Forms.TableLayoutPanel CharacterTableLayoutPanel;
+        private System.Windows.Forms.Button GeneratePowerButton;
+        private System.Windows.Forms.TableLayoutPanel PowerTableLayoutPanel;
+        private System.Windows.Forms.Label Power4DataLabel;
+        private System.Windows.Forms.Label Power2DataLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PowerLabel1;
+        private System.Windows.Forms.Label PowerLabel2;
+        private System.Windows.Forms.Label PowerLabel3;
+        private System.Windows.Forms.Label PowerLabel4;
+        private System.Windows.Forms.Label Power1DataLabel;
+        private System.Windows.Forms.Label Power3DataLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label GeneratedNameLabel;
+        private System.Windows.Forms.Label AbilitiesLabel;
+        private System.Windows.Forms.Label PowersLabel;
+        private System.Windows.Forms.Label nameDataLabel;
+        private System.Windows.Forms.Label generatedNameDataLabel;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

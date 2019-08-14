@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Student Name: Joyeeta Nandi
- * Student ID: 300757798
+ * Student Name: Ishneet Kaur
+ * Student ID: 301045264
  * Description: This is the Splash Form
  */
 

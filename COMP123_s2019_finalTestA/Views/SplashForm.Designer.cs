@@ -30,12 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
+            this.Splashlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SplashTimer
             // 
             this.SplashTimer.Interval = 3000;
             this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
+            // 
+            // Splashlabel
+            // 
+            this.Splashlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Splashlabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Splashlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Splashlabel.Location = new System.Drawing.Point(110, 124);
+            this.Splashlabel.Name = "Splashlabel";
+            this.Splashlabel.Size = new System.Drawing.Size(532, 70);
+            this.Splashlabel.TabIndex = 0;
+            this.Splashlabel.Text = "The Hero Generator";
+            this.Splashlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SplashForm
             // 
@@ -44,6 +59,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.Splashlabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "SplashForm";
@@ -58,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Timer SplashTimer;
+        private System.Windows.Forms.Label Splashlabel;
     }
 }
